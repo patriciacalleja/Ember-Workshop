@@ -6,11 +6,18 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
-    appName: 'FoodMe',
+  i18n: Ember.inject.service(),
 
-    menuLinks: [{
-        label: 'restaurants',
-        url: 'restaurants'
-    }]
+  appName: 'FoodMe',
+
+  menuLinks: [{
+    name: 'restaurants',
+    url: 'restaurants'
+  },
+  {
+   name: 'about',
+   url: 'about'
+ }
+ ]
 
 });
